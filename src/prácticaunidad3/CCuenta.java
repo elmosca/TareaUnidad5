@@ -35,13 +35,13 @@ public class CCuenta {
         nombre=nom;
     }
     // Método que me devuelve el nombre del titular
-    public String getSaldo()
+    public String getNombre()
     {
         return nombre;
     }
 
     // Método que me devuelve el saldo disponible en cada momento
-     public double getEstado ()
+     public double getSaldo ()
     {
         return saldo;
     }
@@ -65,7 +65,7 @@ public class CCuenta {
     {
         if (cantidad <= 0)
             throw new Exception ("No se puede retirar una cantidad negativa");
-        if (getEstado()< cantidad)
+        if (getSaldo()< cantidad)
             throw new Exception ("No se hay suficiente saldo");
         saldo = saldo - cantidad;
     }
