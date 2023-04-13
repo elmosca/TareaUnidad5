@@ -35,7 +35,7 @@ public class CCuenta {
         nombre=nom;
     }
     // Método que me devuelve el nombre del titular
-    public String getNombre()
+    public String getSaldo()
     {
         return nombre;
     }
